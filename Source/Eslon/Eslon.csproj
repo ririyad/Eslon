@@ -35,7 +35,8 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>Eslon.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -99,9 +100,6 @@
     <Compile Include="Support\PanStreamReader.cs" />
     <Compile Include="Support\PanStringReader.cs" />
     <Compile Include="Support\PanTime.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Eslon.pfx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
