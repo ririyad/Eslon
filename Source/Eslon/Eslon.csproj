@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D1523621-F499-459C-B358-05C9FA98669D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Eslon</RootNamespace>
+    <AssemblyName>Eslon</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Eslon.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Eslon.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Eslon.cs" />
+    <Compile Include="EslonAccess.cs" />
+    <Compile Include="EslonBatch.cs" />
+    <Compile Include="EslonBatchReader.cs" />
+    <Compile Include="EslonBatchWriter.cs" />
+    <Compile Include="EslonCanon.cs" />
+    <Compile Include="EslonCanonReflector.cs" />
+    <Compile Include="EslonComment.cs" />
+    <Compile Include="EslonComposer.cs" />
+    <Compile Include="EslonConduit.cs" />
+    <Compile Include="EslonDevice.cs" />
+    <Compile Include="EslonEngine.cs" />
+    <Compile Include="EslonMoveException.cs" />
+    <Compile Include="EslonDisk.cs" />
+    <Compile Include="EslonEditor.cs" />
+    <Compile Include="EslonList.cs" />
+    <Compile Include="EslonMap.cs" />
+    <Compile Include="EslonOpaqueReader.cs" />
+    <Compile Include="EslonPatcher.cs" />
+    <Compile Include="EslonReader.cs" />
+    <Compile Include="EslonReadException.cs" />
+    <Compile Include="EslonReadExceptionCode.cs" />
+    <Compile Include="EslonReflector.cs" />
+    <Compile Include="EslonSymbol.cs" />
+    <Compile Include="EslonVoid.cs" />
+    <Compile Include="EslonVolume.cs" />
+    <Compile Include="EslonWriter.cs" />
+    <Compile Include="Java\Java.cs" />
+    <Compile Include="Java\JavaAccess.cs" />
+    <Compile Include="Java\JavaCanon.cs" />
+    <Compile Include="Java\JavaCanonReflector.cs" />
+    <Compile Include="Java\JavaReader.cs" />
+    <Compile Include="Java\JavaWriter.cs" />
+    <Compile Include="Projects\EslonEditor_Array.cs" />
+    <Compile Include="Projects\EslonEditor_Collection.cs" />
+    <Compile Include="Projects\EslonEditor_Dictionary.cs" />
+    <Compile Include="Projects\EslonEditor_Enum.cs" />
+    <Compile Include="Projects\EslonEditor_Enumerable.cs" />
+    <Compile Include="Projects\EslonEditor_KeyValuePair.cs" />
+    <Compile Include="Projects\EslonEditor_List.cs" />
+    <Compile Include="Projects\EslonEditor_MultiArray.cs" />
+    <Compile Include="Projects\EslonEditor_Nullable.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Support\API.cs" />
+    <Compile Include="Support\COM.cs" />
+    <Compile Include="Support\CriticalException.cs" />
+    <Compile Include="Support\Extra.cs" />
+    <Compile Include="Support\ExtraCode.cs" />
+    <Compile Include="Support\BCL.cs" />
+    <Compile Include="Support\ExtraReflection.cs" />
+    <Compile Include="Support\ExtraRender.cs" />
+    <Compile Include="Support\ExtraText.cs" />
+    <Compile Include="Support\PanDynamic.cs" />
+    <Compile Include="Support\PanReader.cs" />
+    <Compile Include="Support\PanStreamReader.cs" />
+    <Compile Include="Support\PanStringReader.cs" />
+    <Compile Include="Support\PanTime.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Eslon.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
