@@ -1,6 +1,6 @@
 ﻿![Logo](Documentation/Images/Eslon.png)
 
-Eslon (S-LON, "Single Line Object Notation") is a hybrid serialization library for .NET, combining the Windows-themed Eslon syntax and JSON.
+Eslon (S-LON, "Single Line Object Notation") is a hybrid serialization library for .NET, combining JSON and the Windows-themed Eslon syntax.
 
 - [Syntax](Documentation/Syntax.md)
 - [Test cases](Documentation/Output.md)
