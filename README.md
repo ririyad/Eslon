@@ -8,14 +8,14 @@ Eslon (S-LON, "Single Line Object Notation") is a hybrid serialization library f
 ──────────────────────────────────────────────────
 
 ## Examples
-Serialize your data:
+Serialize to JSON:
 ```csharp
-EslonAccess.Write(DateTime.Now); // "2017-03-21T17:04:19.818+01:00"
+JavaAccess.Write(DateTime.Now); // "2017-03-21T17:04:19.818+01:00"
 ```
 
-Deserialize your data:
+Deserialize from JSON:
 ```csharp
-EslonAccess.Read("2017-03-21T17:04:19.818+01:00"); // {3/21/2017 5:04:19 PM}
+JavaAccess.Read("2017-03-21T17:04:19.818+01:00"); // {3/21/2017 5:04:19 PM}
 ```
 
 ### Architecture
